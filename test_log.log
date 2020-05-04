@@ -1,0 +1,18 @@
+##teamcity[enteredTheMatrix timestamp='2020-04-19T17:56:00.673']
+Launching unittests with arguments python -m unittest /mnt/d/MyImgProject/framework/unit_test_model.py -v in /mnt/d/MyImgProject/framework
+
+##teamcity[testCount timestamp='2020-04-19T17:56:00.681' count='3']
+##teamcity[testSuiteStarted timestamp='2020-04-19T17:56:00.683' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model' name='unit_test_model' nodeId='1' parentNodeId='0']
+##teamcity[testSuiteStarted timestamp='2020-04-19T17:56:00.683' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model.TestStringMethods' name='TestStringMethods' nodeId='2' parentNodeId='1']
+##teamcity[testStarted timestamp='2020-04-19T17:56:00.683' captureStandardOutput='true' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model.TestStringMethods.test_isupper' name='test_isupper' nodeId='3' parentNodeId='2']
+##teamcity[testFailed timestamp='2020-04-19T17:56:00.686' actual='{|'a|': 2, |'b|': 3}' details='Traceback (most recent call last):|n  File "/mnt/c/Program Files/JetBrains/PyCharm 2019.2.1/helpers/pycharm/teamcity/diff_tools.py", line 32, in _patched_equals|n    old(self, first, second, msg)|n  File "/usr/lib/python3.6/unittest/case.py", line 829, in assertEqual|n    assertion_func(first, second, msg=msg)|n  File "/usr/lib/python3.6/unittest/case.py", line 1121, in assertDictEqual|n    self.fail(self._formatMessage(msg, standardMsg))|n  File "/usr/lib/python3.6/unittest/case.py", line 670, in fail|n    raise self.failureException(msg)|nAssertionError: {|'a|': 3, |'b|': 3} != {|'a|': 2, |'b|': 3}|n- {|'a|': 3, |'b|': 3}|n?       ^|n|n+ {|'a|': 2, |'b|': 3}|n?       ^|n|n|nDuring handling of the above exception, another exception occurred:|n|nTraceback (most recent call last):|n  File "/usr/lib/python3.6/unittest/case.py", line 59, in testPartExecutor|n    yield|n  File "/usr/lib/python3.6/unittest/case.py", line 605, in run|n    testMethod()|n  File "/mnt/d/MyImgProject/framework/unit_test_model.py", line 18, in test_isupper|n    self.assertEqual(response, test_service.add(a, b))|n' expected='{|'a|': 3, |'b|': 3}' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model.TestStringMethods.test_isupper' message='|n{|'a|': 2, |'b|': 3} != {|'a|': 3, |'b|': 3}|n' name='test_isupper' nodeId='3' parentNodeId='2' type='comparisonFailure']
+##teamcity[testFinished timestamp='2020-04-19T17:56:00.686' duration='5' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model.TestStringMethods.test_isupper' name='test_isupper' nodeId='3' parentNodeId='2']
+##teamcity[testStarted timestamp='2020-04-19T17:56:00.686' captureStandardOutput='true' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model.TestStringMethods.test_split' name='test_split' nodeId='4' parentNodeId='2']
+##teamcity[testFinished timestamp='2020-04-19T17:56:00.686' duration='0' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model.TestStringMethods.test_split' name='test_split' nodeId='4' parentNodeId='2']
+##teamcity[testStarted timestamp='2020-04-19T17:56:00.687' captureStandardOutput='true' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model.TestStringMethods.test_upper' name='test_upper' nodeId='5' parentNodeId='2']
+##teamcity[testFinished timestamp='2020-04-19T17:56:00.687' duration='0' locationHint='python</mnt/d/MyImgProject/framework>://unit_test_model.TestStringMethods.test_upper' name='test_upper' nodeId='5' parentNodeId='2']
+
+
+Ran 3 tests in 0.006s
+
+FAILED (failures=1)
