@@ -31,3 +31,4 @@ class BaseService:
 data = {}
 base_service = BaseService()
 base_service.check_data_frame(data)
+print("sdf")
